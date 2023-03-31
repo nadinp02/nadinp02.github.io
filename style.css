@@ -1,9 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+:root {
+    --fuente-principal: "Rubik", sans-serif;
+}
+body {
+    font-family: var(--fuente-principal);
+}
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.2;
+}
+
+
+/** Globales**/
+
 a {
     text-decoration: none;
 }
 
 ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
 }
 
 .product-section {
@@ -159,18 +189,20 @@ ul {
     transform: scaleX(1);
 }
 
-.quick-product-action{
+.quick-product-action {
     display: flex;
     margin-bottom: 36px;
 }
-.pro-qty{
+
+.pro-qty {
     display: inline-block;
     position: relative;
     margin-bottom: 15px;
     margin-right: 7px;
     top: 2px;
 }
-.pro-qty input{
+
+.pro-qty input {
     background-color: #f1f1f1;
     border: none;
     border-radius: 25px;
@@ -183,7 +215,8 @@ ul {
     line-height: 50px;
     text-align: center;
 }
-.btn-theme{
+
+.btn-theme {
     border-radius: 25px;
     font-weight: 400;
     font-size: 16px;
@@ -196,11 +229,13 @@ ul {
     border-color: #ff5b00;
     color: #fff;
 }
-.btn-theme:hover{
+
+.btn-theme:hover {
     background-color: #ff5900e0;
     border-color: #ff5900e0;
     color: #fff;
 }
+
 .product-count {
     display: flex;
 }

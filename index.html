@@ -2,124 +2,573 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>TryEcommerce</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Try Ecommerce</title>
+
+    <!--== Favicon ==-->
+    <link rel="shortcut icon" href="theme/assets/img/favicon.ico" type="image/x-icon" />
+
+    <!--== Google Fonts ==-->
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One:400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!--== Bootstrap CSS ==-->
+    <link href="theme/assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!--== Font-awesome Icons CSS ==-->
+    <link href="theme/assets/css/font-awesome.min.css" rel="stylesheet" />
+    <!--== Pe Icon 7 Min Icons CSS ==-->
+    <link href="theme/assets/css/pe-icon-7-stroke.min.css" rel="stylesheet" />
+    <!--== Ionicons CSS ==-->
+    <link href="theme/assets/css/ionicons.css" rel="stylesheet" />
+    <!--== Animate CSS ==-->
+    <link href="theme/assets/css/animate.css" rel="stylesheet" />
+    <!--== Aos CSS ==-->
+    <link href="theme/assets/css/aos.css" rel="stylesheet" />
+    <!--== FancyBox CSS ==-->
+    <link href="theme/assets/css/jquery.fancybox.min.css" rel="stylesheet" />
+    <!--== Slicknav CSS ==-->
+    <link href="theme/assets/css/slicknav.css" rel="stylesheet" />
+    <!--== Swiper CSS ==-->
+    <link href="theme/assets/css/swiper.min.css" rel="stylesheet" />
+    <!--== Slick CSS ==-->
+    <link href="theme/assets/css/slick.css" rel="stylesheet" />
+    <!--== Rangeslider CSS ==-->
+    <link href="theme/assets/css/rangeslider.css" rel="stylesheet" />
+    <!--== Main Style CSS ==-->
+    <link href="theme/assets/css/style.css" rel="stylesheet" />
+    <script src="jquery.js"></script> 
+
 </head>
 
 <body>
-
-<header class="header">
-    <div class="container nav-bar">
-        <div class="logo">
-            <a href="index.html">
-                <img src="ml.webp" alt="Logo" style="width:200px">
-            </a>
+  <header class="header-wrapper">
+    <div class="header-middle">
+        <div class="container">
+            <div class="row row-gutter-0 align-items-center">
+                <div class="col-12">
+                    <div class="header-align">
+                        <div class="header-align-left">
+                            <div class="header-logo-area">
+                                <a href="index.html">
+                                    <img class="logo-main" src="imagenes/mercadolibre.svg" alt="Logo" />
+                                    <img class="logo-light" src="imagenes/mercadolibre.svg" alt="Logo" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="header-align-center">
+                            <div class="header-search-box">
+                                <form action="#" method="post">
+                                    <div class="form-input-item">
+                                        <label for="search" class="sr-only">Buscar</label>
+                                        <input type="text" id="search" placeholder="Buscar">
+                                        <button type="submit" class="btn-src">
+                                            <i class="pe-7s-search"></i>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="header-align-right">
+                            <div class="header-action-area">
+                                <div class="header-action-wishlist">
+                                    <button class="btn-wishlist"
+                                        onclick="window.location.href='shop-wishlist.html'">
+                                        <i class="pe-7s-like"></i>
+                                    </button>
+                                </div>
+                                <div class="header-action-cart">
+                                    <button class="btn-cart cart-icon">
+                                        <span class="cart-count">01</span>
+                                        <i class="pe-7s-shopbag"></i>
+                                    </button>
+                                </div>
+                                <button class="btn-menu d-md-none">
+                                    <i class="fa fa-bars"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <nav class="menu-principal">
-            <ul id="menu-menu-principal" class="menu">
-                <li><a href="index.html" aria-current="page">Inicio</a></li>
-                <li><a href="">Productos</a></li>
-                <li><a href="">Destacados</a></li>
-            </ul>
-        </nav>
-        <div>
-            <label>Buscar:</label>
-        <input type="text">
-        <button>Buscar</button>
+    </div>
+    <div class="header-area header-default sticky-header">
+        <div class="container">
+            <div class="row row-gutter-0 align-items-center">
+                <div class="col-4 col-sm-6 col-lg-2">
+                    <div class="header-logo-area">
+                        <a href="index.html">
+                            <img class="logo-main" src="imagenes/mercadolibre.svg" style="height: 80px;" alt="Logo" />
+                            <img class="logo-light" src="imagenes/mercadolibre.svg" style="height: 80px;" alt="Logo" />
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-8 sticky-md-none">
+                    <div class="header-navigation-area d-none d-md-block">
+                        <ul class="main-menu nav position-relative">
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="productos.html">Productos</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
 </header>
-<section class="product-section two ptb-120">
-    <div class="container">
-        <ul class="grid-list">
-            <li class="card">
-                <div class="product-icon">
-                    <img src="notebook1.jpg">
-                </div>
-                <div class="product-content">
-                    <a href="producto.html">
-                        <h3>Notebook Dell Inspiron 3505</h3>
-                    </a>
-                    <p>$89.900</p>
-                    <a class="btn btn-orange"
-                        href="https://www1.la.dell.com/content/default.aspx?c=ar&l=es&s=&s=gen&~ck=cr" role="button">Ver
-                        Fabricante
-                    </a>
-                </div>
-            </li>
-            <li class="card">
-                <div class="product-icon">
-                    <img src="notebook2.jpg">
-                </div>
-                <div class="product-content">
-                    <a href="producto.html">
-                        <h3>Notebook Dell Inspiron 3505</h3>
-                    </a>
-                    <p>$89.900</p>
-                    <a class="btn btn-orange"
-                        href="https://www1.la.dell.com/content/default.aspx?c=ar&l=es&s=&s=gen&~ck=cr" role="button">Ver
-                        Fabricante
-                    </a>
-                </div>
-            </li>
-            <li class="card">
-                <div class="product-icon">
-                    <img src="notebook3.webp">
-                </div>
-                <div class="product-content">
-                    <a href="producto.html">
-                        <h3>Notebook Dell Inspiron 3505</h3>
-                    </a>
-                    <p>$89.900</p>
-                    <a class="btn btn-orange"
-                        href="https://www1.la.dell.com/content/default.aspx?c=ar&l=es&s=&s=gen&~ck=cr" role="button">Ver
-                        Fabricante
-                    </a>
-                </div>
-            </li>
-            <li class="card">
-                <div class="product-icon">
-                    <img src="notebook2.jpg">
-                </div>
-                <div class="product-content">
-                    <a href="producto.html">
-                        <h3>Notebook Dell Inspiron 3505</h3>
-                    </a>
-                    <p>$89.900</p>
-                    <a class="btn btn-orange"
-                        href="https://www1.la.dell.com/content/default.aspx?c=ar&l=es&s=&s=gen&~ck=cr" role="button">Ver
-                        Fabricante
-                    </a>
-                </div>
-            </li>
-            <li class="card">
-                <div class="product-icon">
-                    <img src="notebook1.jpg">
-                </div>
-                <div class="product-content">
-                    <a href="producto.html">
-                        <h3>Notebook Dell Inspiron 3505</h3>
-                    </a>
-                    <p>$89.900</p>
-                    <a class="btn btn-orange"
-                        href="https://www1.la.dell.com/content/default.aspx?c=ar&l=es&s=&s=gen&~ck=cr" role="button">Ver
-                        Fabricante
-                    </a>
-                </div>
-            </li>
 
-
-        </ul>
-
+    <main class="main-content">
+        <!--== Start Page Title Area ==-->
+        <section class="page-title-area">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-12 m-auto">
+                        <div class="page-title-content text-center">
+                            <h2 class="title">Inicio</h2>
+                            <div class="bread-crumbs"><a href="index.html"> Inicio </a><span class="breadcrumb-sep"> //
+                                </span><span class="active"> Inicio</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--== End Page Title Area ==-->
+        <section class="product-area product-style2-area ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 m-auto">
+                        <div class="section-title text-center" data-aos="fade-up" data-aos-duration="1000">
+                            <h2 class="title">Productos Destacados</h2>
+                            <div class="desc">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut
+                                    labore et dolore magna aliqua. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="product-tab1-slider" data-aos="fade-up" data-aos-duration="1500">
+                            <div class="slide-item">
+                                <!-- Start Product Item -->
+                                <div class="product-item">
+                                    <div class="product-thumb">
+                                        <img src="imagenes/notebook1.jpg" alt="Image">
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="rating">
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <h4 class="title"><a href="producto.html">Notebook Dell Inspiron 3505</a>
+                                        </h4>
+                                        <div class="prices">
+                                            <span class="price">$85.000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Product Item -->
+                            </div>
+                            <div class="slide-item">
+                                <!-- Start Product Item -->
+                                <div class="product-item">
+                                    <div class="product-thumb">
+                                        <img src="imagenes/iphone13.png" alt="Image">
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="rating">
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <h4 class="title"><a href="producto.html">Iphone 13 Pro 264GB</a></h4>
+                                        <div class="prices">
+                                            <span class="price">$300</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Product Item -->
+                            </div>
+                            <div class="slide-item">
+                                <!-- Start Product Item -->
+                                <div class="product-item">
+                                    <div class="product-thumb">
+                                        <img src="imagenes/notebook3.webp" alt="Image">
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="rating">
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <h4 class="title"><a href="producto.html">Notebook Dell Inspiron 3505</a>
+                                        </h4>
+                                        <div class="prices">
+                                            <span class="price">$190.12</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Product Item -->
+                            </div>
+                            <div class="slide-item">
+                                <!-- Start Product Item -->
+                                <div class="product-item">
+                                    <div class="product-thumb">
+                                        <img src="imagenes/intel.jpg" alt="Image">
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="rating">
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <h4 class="title"><a href="producto.html">Procesador Intel Core i3 9th Gen</a></h4>
+                                        <div class="prices">
+                                            <span class="price">$60.699</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Product Item -->
+                            </div>
+                            <div class="slide-item">
+                                <!-- Start Product Item -->
+                                <div class="product-item">
+                                    <div class="product-thumb">
+                                        <img src="imagenes/iphone13.png" alt="Image">
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="rating">
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <h4 class="title"><a href="producto.html">Iphone 13 Pro 264GB</a>
+                                        </h4>
+                                        <div class="prices">
+                                            <span class="price">$300</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Product Item -->
+                            </div>
+                            <div class="slide-item">
+                                <!-- Start Product Item -->
+                                <div class="product-item">
+                                    <div class="product-thumb">
+                                        <img src ="imagenes/razer.png" alt="Image">
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="rating">
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <h4 class="title"><a href="producto.html">Auriculares Razer 870</a></h4>
+                                        <div class="prices">
+                                            <span class="price">$36.000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Product Item -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+      <!--== Start Footer Area Wrapper ==-->
+  <footer class="footer-area default-style" >
+    <div class="footer-main">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-lg-8">
+            <div class="widget-item item-style3">
+              <div class="about-widget">
+                <a class="footer-logo" href="index.html">
+                  <img src="imagenes/mercadolibre.svg" style="height:100px" alt="Logo">
+                </a>
+                <p>Lorem ipsum dolor sit amet, consecl adipisicing elit,</br> sed do eiusmod teml incididunt ut labore et dolore</br>magna aliqua Ut enim</p>
+                <div class="widget-social-icons">
+                  <a href="#"><i class="ion-social-twitter"></i></a>
+                  <a href="#"><i class="ion-social-tumblr"></i></a>
+                  <a href="#"><i class="ion-social-facebook"></i></a>
+                  <a href="#"><i class="ion-social-instagram-outline"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-44 col-lg-4">
+            <div class="widget-item">
+              <h4 class="widget-title">Informacion</h4>
+              <h4 class="widget-title widget-collapsed-title collapsed" data-bs-toggle="collapse" data-bs-target="#dividerId-4">Informacion</h4>
+              <div id="dividerId-4" class="collapse widget-collapse-body">
+                <p class="widget-address">Direccion: 25 de mayo 2433, <br>San Francisco, Cordoba.</p>
+                <ul class="widget-contact-info">
+                  <li>Telefono: <a href="tel://0123456789">0123456789</a></li>
+                  <li>Email: <a href="mailto://email@example.com">email@example.com</a></li>
+                </ul>
+                <div class="widget-payment-info">
+                  <div class="thumb">
+                    <a href="index.html"><img src="theme/assets/img/photos/payment1.png" alt="Image"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <div class="footer-shape bg-img" data-bg-img="theme/assets/img/photos/footer1.png"></div>
+  </footer>
+  <!--== End Footer Area Wrapper ==-->
+    <!--== Start Product Quick View ==-->
+  <aside class="product-quick-view-modal">
+    <div class="product-quick-view-inner">
+      <div class="product-quick-view-content">
+        <button type="button" class="btn-close">
+          <span class="pe-7s-close"><i class="lastudioicon-e-remove"></i></span>
+        </button>
+        <div class="row row-gutter-0">
+          <div class="col-lg-6 col-md-6 col-12">
+            <div class="thumb">
+              <img src="theme/assets/img/shop/quimagenes/ick-view1.jpg" alt="Image">
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-12">
+            <div class="single-product-info">
+              <h4 class="title">Jigsaw Puzzles For Kids</h4>
+              <div class="prices">
+                <span class="price">$120.59</span>
+              </div>
+              <div class="product-rating">
+                <div class="rating">
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+                <div class="review">
+                  <a href="#/">( 5 Customer Review )</a>
+                </div>
+              </div>
+              <div class="single-product-featured">
+                <ul>
+                  <li><i class="fa fa-check"></i> Free Shipping</li>
+                  <li><i class="fa fa-check"></i> Support 24/7</li>
+                  <li><i class="fa fa-check"></i> Money Return</li>
+                </ul>
+              </div>
+              <p class="product-desc">Lorem ipsum dolor sit amet, consect adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quisll exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duisol aute irure dolor in reprehenderit.</p>
+              <div class="quick-product-action">
+                <div class="action-top">
+                  <div class="pro-qty">
+                    <input type="text" id="quantity" title="Quantity" value="01" />
+                  </div>
+                  <button class="btn btn-theme">Add to Cart</button>
+                  <a class="btn-wishlist" href="shop-wishlist.html">Add to Wishlist</a>
+                </div>
+              </div>
+              <div class="widget">
+                <h3 class="title">SKU:</h3>
+                <div class="widget-tags">
+                  <span>Ch-256xl</span>
+                </div>
+              </div>
+              <div class="widget">
+                <h3 class="title">Categories:</h3>
+                <div class="widget-tags">
+                  <a href="blog.html">Toys.</a>
+                  <a href="blog.html">Dresss</a>
+                </div>
+              </div>
+              <div class="widget">
+                <h3 class="title">Tag:</h3>
+                <div class="widget-tags">
+                  <a href="blog.html">Toys,</a>
+                  <a href="blog.html">Dress</a>
+                </div>
+              </div>
+              <div class="widget">
+                <h3 class="title">Share:</h3>
+                <div class="widget-tags widget-share">
+                  <span class="fa fa-facebook"></span>
+                  <span class="fa fa-dribbble"></span>
+                  <span class="fa fa-pinterest-p"></span>
+                  <span class="fa fa-twitter"></span>
+                  <span class="fa fa-linkedin"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="canvas-overlay"></div>
+  </aside>
+  <!--== End Product Quick View ==-->
 
+  <!--== Start Aside Search Menu ==-->
+  <div class="search-box-wrapper">
+    <div class="search-box-content-inner">
+      <div class="search-box-form-wrap">
+        <div class="search-note">
+          <p>Start typing and press Enter to search</p>
+        </div>
+        <form action="#" method="post">
+          <div class="search-form position-relative">
+            <label for="search-input" class="sr-only">Search</label>
+            <input type="search" class="form-control" placeholder="Search" id="search-input">
+            <button class="search-button"><i class="pe-7s-search"></i></button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!--== End Aside Search Menu ==-->
+    <a href="javascript:;" class="search-close"><i class="pe-7s-close"></i></a>
+  </div>
+  <!--== End Aside Search Menu ==-->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    </body>
+  <!--== Start Sidebar Cart Menu ==-->
+  <aside class="sidebar-cart-modal">
+    <div class="sidebar-cart-inner">
+      <div class="sidebar-cart-content">
+        <a class="cart-close" href="javascript:void(0);"><i class="pe-7s-close"></i></a>
+        <div class="sidebar-cart-all">
+          <div class="cart-header">
+            <h3>MI CARRITO</h3>
+            <div class="close-style-wrap">
+              <span class="close-style close-style-width-1 cart-close"></span>
+            </div>
+          </div>
+          <div class="cart-content cart-content-padding">
+            <ul>
+              <li class="single-product-cart">
+                <div class="cart-img">
+                  <a href="producto.html"><img src="imagenes/notebook1.jpg" alt=""></a>
+                </div>
+                <div class="cart-title">
+                  <h4><a href="producto.html">Notebool Dell Inspiron 3505</a></h4>
+                  <span> 1 × <span class="price"> $85.000</span></span>
+                </div>
+                <div class="cart-delete">
+                  <a href="#/"><i class="pe-7s-trash icons"></i></a>
+                </div>
+              </li>
+              <li class="single-product-cart">
+                <div class="cart-img">
+                  <a href="producto.html"><img src="imagenes/intel.jpg" alt=""></a>
+                </div>
+                <div class="cart-title">
+                  <h4><a href="producto.html">Procesador Intel Core i3 9th Gen</a></h4>
+                  <span> 1 × <span class="price"> $60.699 </span></span>
+                </div>
+                <div class="cart-delete">
+                  <a href="#/"><i class="pe-7s-trash icons"></i></a>
+                </div>
+              </li>
+            </ul>
+            <div class="cart-total">
+              <h4>Subtotal: <span>$145.699</span></h4>
+            </div>
+            <div class="cart-checkout-btn">
+              <a class="cart-btn" href="shop-cart.html">Ver Carrito</a>
+              <a class="checkout-btn" href="shop-checkout.html">Finalizar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-cart-overlay"></div>
+  <!--== End Sidebar Cart Menu ==-->
+
+  <!--== Start Side Menu ==-->
+  <aside class="off-canvas-wrapper">
+    <div class="off-canvas-inner">
+      <div class="off-canvas-overlay d-none"></div>
+      <!-- Start Off Canvas Content Wrapper -->
+      <div class="off-canvas-content">
+        <!-- Off Canvas Header -->
+        <div class="off-canvas-header">
+          <div class="close-action">
+            <button class="btn-close"><i class="pe-7s-close"></i></button>
+          </div>
+        </div>
+
+        <div class="off-canvas-item">
+          <!-- Start Mobile Menu Wrapper -->
+          <div class="res-mobile-menu">
+            <!-- Note Content Auto Generate By Jquery From Main Menu -->
+          </div>
+          <!-- End Mobile Menu Wrapper -->
+        </div>
+        <!-- Off Canvas Footer -->
+        <div class="off-canvas-footer"></div>
+      </div>
+      <!-- End Off Canvas Content Wrapper -->
+    </div>
+  </aside>
+  <!--== End Side Menu ==-->
+</div>
+
+<!--=======================Javascript============================-->
+
+<!--=== Modernizr Min Js ===-->
+<script src="theme/assets/js/modernizr.js"></script>
+<!--=== jQuery Min Js ===-->
+<script src="theme/assets/js/jquery-main.js"></script>
+<!--=== jQuery Migration Min Js ===-->
+<script src="theme/assets/js/jquery-migrate.js"></script>
+<!--=== Popper Min Js ===-->
+<script src="theme/assets/js/popper.min.js"></script>
+<!--=== Bootstrap Min Js ===-->
+<script src="theme/assets/js/bootstrap.min.js"></script>
+<!--=== jquery Appear Js ===-->
+<script src="theme/assets/js/jquery.appear.js"></script>
+<!--=== jquery Swiper Min Js ===-->
+<script src="theme/assets/js/swiper.min.js"></script>
+<!--=== jquery Fancybox Min Js ===-->
+<script src="theme/assets/js/fancybox.min.js"></script>
+<!--=== jquery Aos Min Js ===-->
+<script src="theme/assets/js/aos.min.js"></script>
+<!--=== jquery Slicknav Js ===-->
+<script src="theme/assets/js/jquery.slicknav.js"></script>
+<!--=== jquery Countdown Js ===-->
+<script src="theme/assets/js/jquery.countdown.min.js"></script>
+<!--=== jquery Tippy Js ===-->
+<script src="theme/assets/js/tippy.all.min.js"></script>
+<!--=== Isotope Min Js ===-->
+<script src="theme/assets/js/isotope.pkgd.min.js"></script>
+<!--=== Parallax Min Js ===-->
+<script src="theme/assets/js/parallax.min.js"></script>
+<!--=== Slick  Min Js ===-->
+<script src="theme/assets/js/slick.min.js"></script>
+<!--=== jquery Wow Min Js ===-->
+<script src="theme/assets/js/wow.min.js"></script>
+<!--=== jquery Zoom Min Js ===-->
+<script src="theme/assets/js/jquery-zoom.min.js"></script>
+
+<!--=== Custom Js ===-->
+<script src="theme/assets/js/custom.js"></script>
+
+</body>
 
 </html>
