@@ -45,60 +45,10 @@
 <body>
 
     <header class="header-wrapper">
-        <div class="header-middle">
-            <div class="container">
-                <div class="row row-gutter-0 align-items-center">
-                    <div class="col-12">
-                        <div class="header-align">
-                            <div class="header-align-left">
-                                <div class="header-logo-area">
-                                    <a href="index.html">
-                                        <img class="logo-main" src="imagenes/mercadolibre.svg" alt="Logo" />
-                                        <img class="logo-light" src="imagenes/mercadolibre.svg" alt="Logo" />
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="header-align-center">
-                                <div class="header-search-box">
-                                    <form action="#" method="post">
-                                        <div class="form-input-item">
-                                            <label for="search" class="sr-only">Buscar</label>
-                                            <input type="text" id="search" placeholder="Buscar">
-                                            <button type="submit" class="btn-src">
-                                                <i class="pe-7s-search"></i>
-                                            </button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="header-align-right">
-                                <div class="header-action-area">
-                                    <div class="header-action-wishlist">
-                                        <button class="btn-wishlist"
-                                            onclick="window.location.href='shop-wishlist.html'">
-                                            <i class="pe-7s-like"></i>
-                                        </button>
-                                    </div>
-                                    <div class="header-action-cart">
-                                        <button class="btn-cart cart-icon">
-                                            <span class="cart-count">01</span>
-                                            <i class="pe-7s-shopbag"></i>
-                                        </button>
-                                    </div>
-                                    <button class="btn-menu d-md-none">
-                                        <i class="fa fa-bars"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="header-area header-default sticky-header">
             <div class="container">
                 <div class="row row-gutter-0 align-items-center">
-                    <div class="col-4 col-sm-6 col-lg-2">
+                    <div class="col-sm-6 col-lg-3">
                         <div class="header-logo-area">
                             <a href="index.html">
                                 <img class="logo-main" src="imagenes/mercadolibre.svg" style="height: 80px;"
@@ -108,7 +58,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-lg-8 sticky-md-none">
+                    <div class="col-lg-6 sticky-md-none">
                         <div class="header-navigation-area d-none d-md-block">
                             <ul class="main-menu nav position-relative">
                                 <li><a href="index.html">Inicio</a></li>
@@ -116,7 +66,25 @@
                             </ul>
                         </div>
                     </div>
-
+                    <div class="col-lg-3 sticky-md-none">
+                        <div class="header-action-area">
+                            <div class="header-action-wishlist">
+                                <button class="btn-wishlist"
+                                    onclick="window.location.href='shop-wishlist.html'">
+                                    <i class="pe-7s-like"></i>
+                                </button>
+                            </div>
+                            <div class="header-action-cart">
+                                <button class="btn-cart cart-icon">
+                                    <span class="cart-count">01</span>
+                                    <i class="pe-7s-shopbag"></i>
+                                </button>
+                            </div>
+                            <button class="btn-menu d-md-none">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -145,139 +113,28 @@
                     <div class="col-lg-9 order-0 order-lg-1">
                         <div class="tab-content">
                             <div class="tab-pane fade show active" role="tabpanel" aria-labelledby="column-three-tab">
-                                <div class="row">
-                                    <div class="col-sm-6 col-md-4">
-                                        <div class="product-item">
-                                            <div class="product-thumb">
-                                                <img src="imagenes/notebook1.jpg" alt="Image">
+                                <div class="row" id="listado-productos">
 
-                                            </div>
-                                            <div class="product-info">
-                                                <div class="rating">
-                                                    <span class="fa fa-star"></span>
-                                                    <span class="fa fa-star"></span>
-                                                    <span class="fa fa-star"></span>
-                                                    <span class="fa fa-star"></span>
-                                                </div>
-                                                <h4 class="title"><a href="producto.html">Notebook Dell Inspiron
-                                                        3505</a>
-                                                </h4>
-                                                <div class="prices">
-                                                    <span class="price">$85.000</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 col-md-4">
-                                        <div class="product-item">
-                                            <div class="product-thumb">
-                                                <img src="imagenes/iphone13.png" alt="Image">
-
-                                            </div>
-                                            <div class="product-info">
-                                                <div class="rating">
-                                                    <span class="fa fa-star"></span>
-                                                    <span class="fa fa-star"></span>
-                                                    <span class="fa fa-star"></span>
-                                                    <span class="fa fa-star"></span>
-                                                    <span class="fa fa-star"></span>
-                                                </div>
-                                                <h4 class="title"><a href="producto.html">Iphone 13 Pro 264GB</a>
-                                                </h4>
-                                                <div class="prices">
-                                                    <span class="price">$300</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 col-md-4">
-                                        <div class="product-item">
-                                            <div class="product-thumb">
-                                                <img src="imagenes/notebook2.jpg" alt="Image">
-
-                                            </div>
-                                            <div class="product-info">
-                                                <div class="rating">
-                                                    <span class="fa fa-star"></span>
-                                                    <span class="fa fa-star"></span>
-                                                    <span class="fa fa-star"></span>
-                                                </div>
-                                                <h4 class="title"><a href="producto.html">Notebook Dell Inspiron
-                                                        3010</a></h4>
-                                                <div class="prices">
-                                                    <span class="price">$180.12</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 col-md-4">
-                                        <div class="product-item">
-                                            <div class="product-thumb">
-                                                <img src="imagenes/intel.jpg" alt="Image">
-
-                                            </div>
-                                            <div class="product-info">
-                                                <div class="rating">
-                                                    <span class="fa fa-star"></span>
-                                                    <span class="fa fa-star"></span>
-                                                    <span class="fa fa-star"></span>
-                                                    <span class="fa fa-star"></span>
-                                                </div>
-                                                <h4 class="title"><a href="producto.html">Procesador Intel Core i3 9th
-                                                        Gen</a></h4>
-                                                <div class="prices">
-                                                    <span class="price">$60.699</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 col-md-4">
-                                        <div class="product-item">
-                                            <div class="product-thumb">
-                                                <img src="imagenes/razer.png" alt="Image">
-
-                                            </div>
-                                            <div class="product-info">
-                                                <div class="rating">
-                                                    <span class="fa fa-star"></span>
-                                                    <span class="fa fa-star"></span>
-                                                    <span class="fa fa-star"></span>
-                                                    <span class="fa fa-star"></span>
-                                                    <span class="fa fa-star"></span>
-                                                </div>
-                                                <h4 class="title"><a href="producto.html">Auriculares Razer 870</a></h4>
-                                                <div class="prices">
-                                                    <span class="price">$36.000</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 col-md-4">
-                                        <div class="product-item">
-                                            <div class="product-thumb">
-                                                <img src="imagenes/notebook3.webp" alt="Image">
-
-                                            </div>
-                                            <div class="product-info">
-                                                <div class="rating">
-                                                    <span class="fa fa-star"></span>
-                                                    <span class="fa fa-star"></span>
-                                                    <span class="fa fa-star"></span>
-                                                </div>
-                                                <h4 class="title"><a href="producto.html">Notebook Dell Inspiron
-                                                        3505</a></h4>
-                                                <div class="prices">
-                                                    <span class="price">$290.12</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 order-1 order-lg-0">
                         <div class="sidebar-area shop-sidebar-area">
+                            <div class="header-search-box">
+                                <form action="#" method="post">
+                                    <div class="form-input-item">
+                                        <label for="search" class="sr-only">Buscar</label>
+                                        <input class="search-products" type="text" id="search" placeholder="Buscar">
+
+                                        <!-- <button type="submit" class="btn-src">
+                                                <i class="pe-7s-search"></i>
+                                            </button> -->
+
+                                    </div>
+                                </form>
+                            </div>
+
                             <div class="widget-item">
                                 <div class="widget-title">
                                     <h3 class="title">Categorias</h3>
@@ -533,6 +390,8 @@
 
     <!--=== Custom Js ===-->
     <script src="theme/assets/js/custom.js"></script>
+    <script src="theme/assets/js/script-productos.js"></script>
+
 
 </body>
 

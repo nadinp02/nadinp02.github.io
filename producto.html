@@ -37,6 +37,7 @@
     <link href="theme/assets/css/slick.css" rel="stylesheet"/>
     <!--== Main Style CSS ==-->
     <link href="theme/assets/css/style.css" rel="stylesheet" />
+    <script src="script.js"></script>
 
 </head>
 
@@ -262,7 +263,7 @@
                         </div>
                       </div>
                       <div class="product-review-form">
-                        <h4 class="title">Escribe una review</h4>
+                        <!-- <h4 class="title">Escribe una review</h4>
                         <form action="#" method="post">
                           <div class="review-form-content">
                             <div class="row">
@@ -311,7 +312,31 @@
                               </div>
                             </div>
                           </div>
-                        </form>
+                        </form> -->
+                        <div id="comentarios">
+                          <h2>Comentarios</h2>
+                          <div id="listado-comentarios">
+                  
+                          </div>
+                  
+                          <h2 class="title">¡Deja tu comentario!</h2>
+                          <form>
+                              <label>Comentario: <textarea id="texto-comentario" class="form-control textarea" name="comentario"></textarea></label>
+                  
+                              <label>
+                                  Calificación:
+                                  <select id="puntaje-feedback">
+                                      <option value="1">1</option>
+                                      <option value="2">2</option>
+                                      <option value="3">3</option>
+                                      <option value="4">4</option>
+                                      <option value="5">5</option>
+                                  </select>
+                              </label>
+                  
+                              <input id="boton-enviar-comentario" type="submit" value="Enviar">
+                          </form>
+                      </div>
                       </div>
                       <div class="review-content">
                         <div class="review-item">
@@ -607,7 +632,7 @@
 </div>
 
 <!--=======================Javascript============================-->
-
+<script src="theme/assets/js/script.js" defer></script>
 <!--=== Modernizr Min Js ===-->
 <script src="theme/assets/js/modernizr.js"></script>
 <!--=== jQuery Min Js ===-->

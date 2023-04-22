@@ -1912,14 +1912,12 @@ table p {
   margin-right: 0;
 }
 .main-menu > li > a {
-  color: #fcdcea;
-  display: block;
-  font-size: 12.5px;
-  font-weight: 700;
-  line-height: 22px;
-  padding: 7px 25px;
-  position: relative;
-  text-transform: uppercase;
+  color: #000;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 0;
+    margin: 0 30px;
+    text-transform: uppercase;
 }
 .main-menu > li:hover > a, .main-menu > li.active > a {
   color: #ff6500b3;
@@ -2278,7 +2276,7 @@ table p {
   }
 }
 .header-area.header-default .header-logo-area {
-  display: none;
+  /* display: none; */
   max-width: 185px;
   top: -1px;
 }
@@ -2354,9 +2352,11 @@ table p {
 }
 .header-area.header-default .header-action-area {
   align-items: center;
-  display: none;
+  /* display: none; */
   line-height: 1;
   justify-content: flex-end;
+  display: flex;
+    margin-top: 5px;
   margin-top: 12px;
   margin-right: 9px;
 }
@@ -6006,6 +6006,18 @@ table p {
 .product-tab1-slider .slick-next:hover:after {
   background-color: #ff6600;
 }
+.filtro{
+  display: none;
+}
+.search-products{
+  border: 1px solid transparent;
+  color: #8c8c8c;
+  font-size: 14px;
+  height: 44px;
+  background-color: #f9f9f9;
+  padding: 30px 75px 30px 23px;
+  margin-bottom: 20px;
+}
 
 @media only screen and (max-width: 991px) {
   .single-product-slider {
@@ -6102,7 +6114,7 @@ table p {
   display: flex;
   height: 60px;
   justify-content: space-between;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   padding: 10px 29px;
 }
 @media only screen and (max-width: 767px) {
