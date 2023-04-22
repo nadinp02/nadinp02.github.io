@@ -34,6 +34,7 @@ for (let producto of productos) {
     let strong = document.createElement('strong');
     strong.appendChild(texto);
     productInfo.appendChild(strong);
+    
 
     let p = document.createTextNode(producto.precio);
     let precio = document.createElement('p');
